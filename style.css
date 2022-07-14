@@ -1,0 +1,131 @@
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(135deg,
+      #eac086,
+      #f67e20);
+
+  /* font-family: 'Edu VIC WA NT Beginner', cursive; */
+  font-family: 'Roboto Slab', serif;
+}
+
+.container {
+  width: 40%;
+  min-width: 450px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 40%;
+  left: 50%;
+  padding: 10px 40px;
+}
+
+#heading {
+  text-align: center;
+  text-decoration: solid;
+  font-size: 50px;
+  color: #ffff;
+  position: relative;
+  transition: 0.3s;
+  padding: 10px 20px;
+
+}
+
+#newtask {
+  position: relative;
+  background-color: #ffffff;
+  padding: 15px 15px 15px 15px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  margin-top: 10px;
+}
+
+#newtask input {
+  width: 70%;
+  height: 40px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  border: none;
+  padding: 20px;
+  color: #111111;
+  font-weight: 500;
+  position: relative;
+  font-family: 'Roboto Slab', serif;
+}
+
+
+#newtask input:focus {
+  outline: none;
+  border-color: #e7b837;
+}
+
+
+
+#newtask button {
+  position: relative;
+  float: right;
+  /* width: 20%; */
+  /* height: 40px; */
+  border-radius: 20px;
+  padding: 5px 10px 5px 10px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  background-color: #ffad60;
+  border: none;
+  color: #ffffff;
+  cursor: pointer;
+  outline: none;
+}
+
+#tasks {
+  background-color: #ffffff;
+  padding: 5px 20px 20px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  visibility: hidden;
+  position: relative;
+}
+
+.task {
+  background-color: #ffffff;
+  height: 50px;
+  padding: 20px 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #d1d3d4;
+  cursor: pointer;
+  font-family: 'Roboto Slab', serif;
+}
+
+.task span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  font-family: 'Roboto Slab', serif;
+}
+
+.task button {
+  background-color: #ffad60;
+  color: #ffffff;
+  height: 400%;
+  width: 40px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.completed {
+  text-decoration: red line-through;
+}
